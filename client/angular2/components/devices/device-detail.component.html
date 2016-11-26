@@ -1,0 +1,27 @@
+<div style="padding-left:30px;">
+    <div *ngIf="device">
+        <h1>Device {{device.id}}</h1>
+    </div>
+    <div class="graph-container"></div>
+    <div class="graphholder">
+        <h2 data-translate="signal_str">Signal strength</h2>
+        <h5>Dbm</h5>
+        <div id="liveGraph"></div>
+    </div>
+    <div class="graphholder">
+        <h2 data-translate="light">Light</h2>
+        <h5>Lux</h5>
+
+        <div id="viz-wrapper-1"></div>
+    </div>
+    <div class="graphholder">
+        <h2 data-translate="temperature">Temperature</h2>
+        <h5>°C</h5>
+        <div id="viz-wrapper-2"></div>
+    </div>
+    <div class="graphholder">
+        <h2 data-translate="uptime">Uptime</h2>
+        <h5>Sec</h5>
+        <div id="viz-wrapper-3"></div>
+    </div>
+</div>

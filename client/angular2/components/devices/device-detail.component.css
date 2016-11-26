@@ -1,0 +1,88 @@
+.axis line,.axis path {
+    stroke-width: 1;
+    fill: none;
+    stroke: #333;
+    shape-rendering: crispEdges;
+}
+
+svg
+{
+    background: #FFFFFF;
+
+}
+
+body {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.tick text{
+    font-size: 12px;
+}
+
+.tick line{
+    opacity: 0.2;
+}
+
+.area {
+    fill: lightsteelblue;
+    fill-opacity: 0.5;
+    stroke-width: 0;
+}
+
+.graphholder {
+    background: #fff;
+    width:320px;
+    border-radius: 2px;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 0 5px 10px 5px;
+    box-shadow: 0px 1px 5px #939393;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.graphholder:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+h1 {
+    color: #757575;
+    font-family:"Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #757575;
+    font-family:"Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h5 {
+    margin: 0px;
+    color: #757575;
+    font-family:"Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: .02em;
+}

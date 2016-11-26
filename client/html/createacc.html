@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <script src="../javascript/jquery-1.12.3.js"></script>
+    <script src="../javascript/translation.js"></script>
+    <title>Create account</title>
+</head>
+<body>
+<div class="content" id="createaccContent">
+    <div class="langswitcher">
+        <a class="lang activelang" id="English">English</a>
+        |
+        <a class="lang availablelang" id="Svenska">Svenska</a>
+    </div>
+
+    <div class="loginbox" id="createaccbox">
+        <div id="createacc">
+            <form>
+                <div id="accinput">
+                    <div>
+                        <input class="createinput" type="email" placeholder="Email" id="emailinput">
+                    </div>
+
+                    <div>
+                        <input class="createinput" type="text" placeholder="Username" id="usernameinput">
+                    </div>
+
+                    <div>
+                        <input class="createinput" type="password" placeholder="Password" id="passwordinput">
+                    </div>
+
+                    <div>
+                        <input class="createinput" type="password" placeholder="Repeat Password" id="reppasswordinput">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="loginbutton" onclick="location.href='loginpage.html';">
+            <span data-translate="finish">Finish</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <script src="../javascript/jquery-1.12.3.js"></script>
+    <script src="../javascript/translation.js"></script>
+    <title>Login</title>
+</head>
+<body>
+<div class="content" id="logincontent">
+    <div class="langswitcher">
+        <a class="lang activelang" id="English">English</a>
+        |
+        <a class="lang availablelang" id="Svenska">Svenska</a>
+    </div>
+    <div class="loginbox">
+        <form>
+            <input class="logininput" type="text" id="usernameinput" placeholder="Username">
+            <input class="logininput" type="password" id="passwordinput" placeholder="Password">
+        </form>
+        <div id="loginbutton" onclick="location.href='../index.html';">
+                <span data-translate="logintext">Login</span>
+        </div>
+        <div id="createaccarea">
+            <span data-translate="noacc">Don't have an account? </span>
+            <a href="createacc.html"><span id="clickhere" data-translate="clickhere">Click here </span></a>
+            <span data-translate="signup">to sign up</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

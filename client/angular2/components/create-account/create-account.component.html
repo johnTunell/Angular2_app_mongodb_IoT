@@ -1,0 +1,35 @@
+<span [hidden]="submitted">
+    <div class="content" id="createaccContent">
+    <div class="langswitcher">
+        <a #English class="lang activelang" (click)="setLang(English)" id="English">English</a>
+        |
+        <a #Svenska class="lang availablelang" (click)="setLang(Svenska)" id="Svenska">Svenska</a>
+    </div>
+
+        <div class="loginbox" id="createaccbox">
+            <div id="createacc">
+                <form (ngSubmit)="onSubmit(accountForm.value)" #accountForm="ngForm">
+                    <div id="accinput">
+                      <div>
+        <input class="createinput" type="email" placeholder="Email" ngControl="email" id="emailinput">
+    </div>
+
+    <div>
+        <input class="createinput" type="text" placeholder="Username" ngControl="username" id="usernameinput">
+    </div>
+
+    <div>
+        <input class="createinput" type="password" placeholder="Password" ngControl="password" id="passwordinput">
+    </div>
+
+    <div>
+        <input class="createinput" type="password" placeholder="Repeat Password" id="reppasswordinput">
+    </div>
+
+                    <input id="loginbutton" class="createAccButton" type="submit" value="Finish">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </span>

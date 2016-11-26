@@ -1,0 +1,20 @@
+<div class="content" id="logincontent">
+    <div class="langswitcher">
+        <a #English class="lang activelang" (click)="setLang(English)" id="English">English</a>
+        |
+        <a #Svenska class="lang availablelang" (click)="setLang(Svenska)" id="Svenska">Svenska</a>
+    </div>
+    <div class="loginbox">
+        <form (ngSubmit)="onSubmit(loginForm.value)" #loginForm="ngForm">
+            <input class="logininput" ngControl="username" id="usernameinput" type="text" placeholder="Username">
+            <input class="logininput" ngControl="password" id="passwordinput" type="password" placeholder="Password">
+            <input id="loginbutton" type="submit" value="Login">
+        </form>
+
+        <div id="createaccarea">
+            <span data-translate="noacc">Don't have an account? </span>
+            <a (click)="gotoCreateAcc()"><span id="clickhere" data-translate="clickhere">Click here </span></a>
+            <span data-translate="signup">to sign up</span>
+        </div>
+    </div>
+</div>

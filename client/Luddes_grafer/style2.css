@@ -1,0 +1,43 @@
+svg 
+{
+    background: #FFFFFF;
+  
+}
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+.x.axis path {
+  display: none;
+}
+
+.x.axis text { display: none; }
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.tick text{
+    font-size: 12px;
+  }
+
+.tick line{
+    opacity: 0.2;
+  }
+
+.area {
+    fill: lightsteelblue;
+    fill-opacity: 0.5;
+    stroke-width: 0;
+}

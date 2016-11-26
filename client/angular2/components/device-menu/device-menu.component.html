@@ -1,0 +1,7 @@
+<div class="sidebar" id="menufield">
+    <div id="devicelist" *ngFor="#device of devices">
+        <div class="deviceitem" (click)="gotoDetail(device)">
+            <p >{{device.id}}</p>
+        </div>
+    </div>
+</div>

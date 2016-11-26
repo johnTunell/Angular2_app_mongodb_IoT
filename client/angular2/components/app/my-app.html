@@ -1,0 +1,56 @@
+<canvas id="helpcanvas">
+    <img id="arrow1" src="images/arrow.png">
+    <img id="arrow2" src="images/arrow.png">
+    <img id="arrow3" src="images/arrow.png">
+    <img id="arrow4" src="images/arrow.png">
+    <audio id="drawsound" src="../../sounds/hit.mp3"></audio>
+</canvas>
+<div id="content">
+    <div id="header">
+        <div class="headerbutton" id="menubutton" (click)="manageMenubar()"><img src="../../images/list.png" id="listicon"></div>
+        <div id="pageinfo">
+            <div id="titleheading">
+                <img src="../../images/logo.png" id="logo">
+            </div>
+            <div id="loggedinas">
+                <h1></h1>
+            </div>
+            <div class="langswitcher">
+                <a #English class="lang activelang" (click)="setLang(English)" id="English">English</a>
+                |
+                <a #Svenska class="lang availablelang" (click)="setLang(Svenska)" id="Svenska">Svenska</a>
+            </div>
+        </div>
+        <div class="headerbutton" id="settingsbutton" (click)="manageSettingsbar()"><img src="images/gear.png" id="gear"></div>
+    </div>
+    <div class="big-wrapper">
+        <div id="wrapper">
+            <device-menu></device-menu>
+            <router-outlet></router-outlet>
+            <div class="sidebar" id="settingsfield">
+                <div class="settingsitem" id="helpbutton">
+                    <img src="../../images/help.png" id="help">
+                    <span data-translate="help"></span>
+                </div>
+                <div class="settingsitem" id="logoutbutton">
+                    <a  [routerLink]="['Login']" (click)="manageSettingsbar()">
+                        <span data-translate="logout"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            © Project22 crew
+        </div>
+    </div>
+</div>
+
+<!--
+
+<nav>
+    <a [routerLink]="['Dashboard']">Dashboard</a>
+    <a [routerLink]="['Heroes']">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+
+-->
